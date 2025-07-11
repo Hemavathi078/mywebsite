@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deep Scar Removal Treatment</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .treatment-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      background: #fffafa;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #4b004b;
+      text-align: justify;
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(to right, #ff99cc, #ffb6c1);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      margin: 30px auto 0;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.6);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .heart {
+      position: fixed;
+      color: #ffb6c1;
+      font-size: 24px;
+      animation: float 6s linear infinite;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="treatment-section">
+    <h1><u>DEEP SCAR REMOVAL TREATMENT</u></h1>
+    <p>
+      Scarring is a natural part of the healing process after an injury. When skin is damaged, your body creates new tissue to close the wound. This scar tissue, made mostly from the protein collagen, gives support and structure to the affected area.
+      <br><br>
+      Scar tissue is thicker and more fibrous than normal skin, which is why it often looks and feels a bit different. How your scar heals depends on several factors, including the depth and size of the wound, its location, and your age, genetics, sex, and ethnicity.
+      <br><br>
+      At <strong>Shine Skincare Clinic</strong>, our advanced deep scar removal treatments combine micro-needling, organic peels, and laser technology to minimize scars and restore smooth, even skin.
+    </p>
+    <div style="text-align: center;">
+      <a href="../Skincarewebsite/consultation.html" class="button">Book Your Scar Treatment Now</a>
+    </div>
+  </section> 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    setInterval(() => {
+      const skinIcon = document.createElement("div");
+      skinIcon.classList.add("heart"); // Keep class for style
+      skinIcon.innerText = "🌸"; // Skincare product emoji
+      skinIcon.style.left = Math.random() * 100 + "vw";
+      skinIcon.style.fontSize = Math.random() * 10 + 15 + "px";
+      document.body.appendChild(skinIcon);
+      setTimeout(() => skinIcon.remove(), 6000);
+    }, 800);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skin Clinic Video Gallery</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe5e0);
+      color: #4b004b;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+      color: #d63384;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .video-wrapper {
+      max-width: 560px;
+      width: 100%;
+      aspect-ratio: 16/9;
+      margin: 0 auto 50px;
+      box-shadow: 0 4px 16px rgba(255, 182, 193, 0.4);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .title::before,
+    .title::after {
+      content: "🌸";
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="title">HydraFacial Treatment</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/P1ryFUTOFgw?si=DCAkLlcOWNsPfmL5"
+      title="HydraFacial Treatment" allowfullscreen></iframe>
+  </div>
+
+  <h2 class="title">Skin Polishing Treatment</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/WrPICvl7sJU?si=C2oElaP1rfeUiNYp"
+      title="Skin Polishing Treatment" allowfullscreen></iframe>
+  </div>
+
+  <h2 class="title">Carbon Laser Treatment</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/TTnMQDeOOJs?si=gnF9sX9TZkAW1WcH"
+      title="Carbon Laser Treatment" allowfullscreen></iframe>
+  </div>
+
+  <h2 class="title">Dark Circles Treatment</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/hgYpZWQAO50?si=yAaZ4yQrLhy9MAbl"
+      title="Dark Circles Treatment" allowfullscreen></iframe>
+  </div>
+
+  <h2 class="title">Skin Rejuvenation Treatment</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/OqxF480u-7c?si=3YpeFUJUpdHOhRdW"
+      title="Skin Rejuvenation Treatment" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>

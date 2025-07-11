@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DARK SPOTS TREATMENT</title> Treatment</title>
+
+  <!-- 💖 Embedded Girlish Style -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe5e0);
+      color: #4b004b;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .treatment-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      background: #fffafa;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #4b004b;
+      text-align: justify;
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(to right, #ff99cc, #ffb6c1);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      margin: 30px auto 0;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.6);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: fixed;
+      color: #ffb6c1;
+      font-size: 24px;
+      animation: float 6s linear infinite;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="treatment-section">
+  <h1>DARK SPOTS TREATMENT</h1>
+  <p>
+    Dark spots, also known as hyperpigmentation, are patches of skin that appear darker due to excess melanin production. These can be caused by sun exposure, acne scars, hormonal changes, or aging.
+    <br><br>
+    At <strong>Shine Skincare Clinic</strong>, we offer advanced treatments to reduce and remove dark spots while brightening your overall complexion. Our expert dermatologists recommend:
+    <ul style="padding-left: 1.2rem; margin-top: 10px; color: #4b004b;">
+      <li>• Chemical peels to exfoliate pigmented layers</li>
+      <li>• Laser toning for precise melanin targeting</li>
+      <li>• Vitamin C & kojic acid serums for daily maintenance</li>
+      <li>• Sunscreen guidance to prevent future pigmentation</li>
+      <li>• Lifestyle and skincare habit improvements</li>
+    </ul>
+    <br>
+    Our approach is safe, gradual, and designed for all skin types — restoring your natural radiance and boosting skin confidence.
+  </p>
+  <div style="text-align: center;">
+    <a href="../Skincarewebsite/consultation.html" class="button">Fade the Spots 🌸</a>
+  </div>
+</section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      setInterval(() => {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerText = "🌸";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 10 + 15 + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6000);
+      }, 800);
+    });
+  </script>
+</body>
+</html>
