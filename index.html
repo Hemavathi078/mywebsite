@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLOSSOM'S SKINCARE CLINIC</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+<script>
+/* Rose & peach palette for variety */
+const heartColors = ['#a0005e', '#ff69b4', '#ff94b6', '#ffaecb', '#fc6c85'];
+
+function createHeart() {
+  const heart       = document.createElement('div');
+  heart.className   = 'heart';
+  heart.textContent = '❤';                       // use '💖' or '' for blossoms
+  /* randomize properties */
+  heart.style.left            = Math.random() * 100 + 'vw';
+  heart.style.fontSize        = 20 + Math.random() * 20 + 'px';
+  heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+  heart.style.color           = heartColors[Math.floor(Math.random() * heartColors.length)];
+  document.body.appendChild(heart);
+
+  /* remove after animation ends to keep DOM light */
+  setTimeout(() => heart.remove(), 9000);
+}
+
+/* spawn a new heart every 350 ms */
+setInterval(createHeart, 350);
+</script>
+
+</head>
+<body>
+  <center>
+    <h1><b><u style="color: #a0005e;">WELCOME TO BLOSSOM'S SKINCARE CLINIC</u></b></h1>
+
+    <marquee behavior="scroll" scrollamount="40" direction="top">
+      <h2>BOOK YOUR FIRST CONSULTANCY TODAY!!!!!..... AND GET FLAT 50% OFF ON ALL SKINCARE TREATMENTS</h2>
+    </marquee>
+
+    <img src="skincare2.png" alt="clinic demo" width="100%" /><br>
+
+    <a href="treatments.html" target="_blank">
+      <h3><b><u>Why should you choose our Clinic?</u></b></h3>
+    </a>
+
+    <marquee behavior="alternate" scrollamount="20" direction="top">
+      <h2><b>!!!THE COST OF TREATMENTS CAN BE ADJUSTED AS PER THE ONGOING OFFERS!!!</b></h2>
+    </marquee>
+    <div style="text-align: center;">
+  <i class="fas fa-spa icon floating" title="Skincare Blossom"></i>
+  <i class="fas fa-seedling icon pulse" title="Organic"></i>
+  <i class="fas fa-heart icon spin" title="Love Yourself"></i>
+  <i class="fas fa-star icon" title="Premium Service"></i>
+</div>
+
+<table>
+  <tr>
+    <th>SL.NO</th>
+    <th>CONCERN</th>
+    <th>TREATMENT</th>
+    <th>COST (Per Session)</th>
+    <th>COST (Full Session)</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>Dark Spots</td>
+    <td>Chemical Peel</td>
+    <td>₹5,000</td>
+    <td>₹30,000</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Acne Scars</td>
+    <td>Organic Peel</td>
+    <td>₹4,000</td>
+    <td>₹32,000</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Wrinkle</td>
+    <td>Laser Therapy</td>
+    <td>₹7,000</td>
+    <td>₹50,000</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Melasma</td>
+    <td>Organic Peel</td>
+    <td>₹5,000</td>
+    <td>₹30,000</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Skin Dehydration</td>
+    <td>Hydra Facial</td>
+    <td>₹4,500</td>
+    <td>₹22,500</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Skin Rejuvenation</td>
+    <td>PRP</td>
+    <td>₹7,000</td>
+    <td>₹49,000</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Dark Circles</td>
+    <td>Under Eye Peels</td>
+    <td>₹3,500</td>
+    <td>₹17,500</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>Dark Patches</td>
+    <td>Carbon Laser</td>
+    <td>₹3,000</td>
+    <td>₹15,000</td>
+  </tr>
+</table>
+  <a href="demosession.html" target="_blank">
+      <h3><b><u>CLICK HERE TO KNOW MORE ABOUT OUR TREATMENTS</u></b></h3>
+    </a><br>
+    <h2>
+      <a href="consultation.html" target="_blank"><u>BOOK YOUR FIRST CONSULTANCY HERE FOR FREE..!!!</u></a>
+    </h2>
+
+    <h2>HEAD OFFICE ADDRESS</h2>
+    <h3>1st Floor, Plot No: 59/8, Hyderabad - Ramagundam Rd, Main Road, Karkhana, Secunderabad, Telangana 500015</h3>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121807.95461654164!2d78.32908408459019!3d17.435834802248863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a5ca0bb72d1%3A0x1125a6b1c8068e8c!2sKolors%20Healthcare%20Karkhana!5e0!3m2!1sen!2sin!4v1738131324996!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>WE ALSO HAVE BRANCHES ON:</h3>
+    <ul type="none">
+      <h4><u>HYDERABAD</u></h4>
+      <li>Gachibowli</li>
+      <li>Madhapur</li>
+      <li>Kukatpally</li>
+      <li>Ameerpet</li>
+      <h4><u>CHENNAI</u></h4>
+      <li>Ayanavaram</li>
+      <li>ICF</li>
+      <li>Villivakkam</li>
+      <li>Porur</li>
+    </ul>
+    <h2><b><u>CONTACT US FOR MORE DETAILS</u></b></h2>
+    <p><b><ul>+91-8765445623</ul></b></p>
+    <p><b><ul>+91-8765445622</ul></b></p>
+    <p><b><ul><i>SHINECLINIC56@GMAIL.com</i></ul></b></p>
+  </center>
+</body>
+</html>
+
