@@ -97,3 +97,42 @@ function createHeart() {
 /* spawn a new heart every 350 ms */
 setInterval(createHeart, 350);
 
+    // Optional interactive script — e.g., highlight on hover
+    const box = document.getElementById('officeBox');
+    box.addEventListener('mouseenter', () => {
+      box.style.boxShadow = '0 12px 24px rgba(255, 105, 180, 0.6)';
+    });
+    box.addEventListener('mouseleave', () => {
+      box.style.boxShadow = '0 8px 16px rgba(255, 182, 193, 100)';
+    });
+ <script>
+const toggle = document.getElementById('theme-toggle');
+let isNight = false;
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('night-mode');
+  isNight = !isNight;
+  toggle.textContent = isNight ? '🌞' : '🌙';
+});
+
+/* Modify the heart creator to change colors based on mode */
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.textContent = '💖';
+
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = 16 + Math.random() * 24 + 'px';
+  heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+
+  // Use different palettes
+  const lightColors = ['#a0005e', '#ff69b4', '#ff94b6', '#ffaecb', '#fc6c85'];
+  const darkColors  = ['#ff99cc', '#ff66aa', '#ff3399', '#ffcce5', '#d61a7f'];
+
+  const colorPalette = isNight ? darkColors : lightColors;
+  heart.style.color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+
+  document.querySelector('.floating-hearts-container').appendChild(heart);
+  setTimeout(() => heart.remove(), 9000);
+}
+</script>

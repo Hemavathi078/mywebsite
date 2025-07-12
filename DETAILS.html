@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Office - Shine Skincare</title>
+
+  <!-- 🌸 Style Section -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe5e0);
+      color: #4b004b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .address-box {
+      background-color: #fffafa;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+      text-align: center;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease-out, float 5s ease-in-out infinite;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #d63384;
+      margin-bottom: 15px;
+    }
+
+    h3::before,
+    h3::after {
+      content: "🌸";
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #4b004b;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="address-box" id="officeBox">
+    <h3>CORPORATE OFFICE</h3>
+    <p><strong>SHINE SKINCARE & CLINIC</strong></p>
+    <p>
+      Plot No: 59/8, Above Reliance Trends, <br>
+      1st Floor, Karkhana, <br>
+      Secunderabad – 500015.
+    </p>
+  </div>
+
+  <!-- 🌟 Optional JavaScript -->
+  <script>
+    // Optional interactive script — e.g., highlight on hover
+    const box = document.getElementById('officeBox');
+    box.addEventListener('mouseenter', () => {
+      box.style.boxShadow = '0 12px 24px rgba(255, 105, 180, 0.6)';
+    });
+    box.addEventListener('mouseleave', () => {
+      box.style.boxShadow = '0 8px 16px rgba(255, 182, 193, 100)';
+    });
+  </script>
+
+</body>
+</html>

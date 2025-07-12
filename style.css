@@ -1,53 +1,4 @@
-/* style.css – Pink & Peach Girlish Theme */
-/*  
-  table {
-    width: 90%;
-    margin: 30px auto;
-    border-collapse: collapse;
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff0f5;
-    box-shadow: 0 0 15px rgba(160, 0, 94, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    animation: fadeInUp 1s ease-in-out;
-  }
 
-  th, td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #f9cde3;
-  }
-
-  th {
-    background-color: #a0005e;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #ffe4ec;
-  }
-
-  tr:hover {
-    box-shadow: 0 0 15px rgba(160, 0, 94, 0.3);
-    background-color: #ffd5e6;
-    transform: scale(1.01);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
-/* ...existing code before table styles... */
 
 table {
   width: 90%;
@@ -137,21 +88,223 @@ marquee {
   font-size: 1.2rem;
   color: #d63384;
   margin-top: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+.marquee-container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 90%; /* adjust based on layout */
+  overflow: hidden;
 }
 
-a {
+/* a {
   color: #e75480;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  font-weight: bold;
+  font-weight: bold; */
+/* Base link style */
+/* Bright and animated links */
+/* Animated, glowing, bright links */
+
+/* Hero Section Styling */
+.treatments-section {
+  background: #fff0f8;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4b004b;
 }
 
-a:hover {
+.treatments-section h2 {
+  font-size: 2rem;
+  color: #a0005e;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ffb6d3;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  color: #6a006a;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #ff4da6;
+  text-shadow: 0 0 5px #ffc4e1;
+}
+
+.treatment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.treatment-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(160, 0, 94, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(160, 0, 94, 0.3);
+}
+
+.treatment-card h3 {
+  color: #a0005e;
+  margin-bottom: 10px;
+}
+
+.treatment-card p {
+  font-size: 0.95rem;
+  color: #5a005a;
+}
+
+.hero {
+  background: linear-gradient(to right, #fff0f5, #ffe6f0);
+ 
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4b004b;
+  border-bottom: 5px solid #a0005e;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Highlight clinic name */
+.highlight {
+  color: #a0005e;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff99cc;
+}
+.consultancy-section {
+  background: linear-gradient(to right, #ffe6f0, #fff5fa);
+  padding: 50px 20px;
+  text-align: center;
+  color: #4b004b;
+}
+
+.consultancy-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #a0005e;
+  text-shadow: 0 0 6px #ffc0db;
+}
+
+.consultancy-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6a006a;
+}
+
+.highlight-text {
+  font-weight: bold;
+  color: #ff4da6;
+  text-shadow: 0 0 4px #ffc4e1;
+}
+
+/* Base link style */
+.animated-link {
+  color: #a0005e;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  transition: all 0.4s ease;
+}
+
+/* Underline animation */
+.animated-link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff70b5, #ffb6e6, #ffa6d3);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.animated-link:hover {
+  color: #ff4da6;
+  text-shadow: 0 0 10px #ffb6e6, 0 0 15px #ff66aa;
+  transform: scale(1.05);
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.animated-link:visited {
+  color: #800040;
+}
+
+/* Floating hearts on hover */
+.heart-link::before {
+  content: "💖";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: floatHeart 1.5s infinite ease-in-out;
+}
+
+.heart-link:hover::before {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+@keyframes floatHeart {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.link-container {
+  margin-top: 25px;
+}
+
+@keyframes floatHeart {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Center the link containers */
+.link-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+/* a:hover {
   color: #a0005e;
   text-shadow: 0 0 10px #ffc0cb;
-}
-
-a.button {
+} */
+/* a.button {
   display: inline-block;
   background: linear-gradient(to right, #ff99cc, #ffb6c1);
   color: white;
@@ -166,7 +319,7 @@ a.button {
 a.button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
-}
+} */
 
 img {
   width: 100%;
@@ -201,17 +354,16 @@ td {
 
 h2, h3, h4 {
   text-align: center;
-  color: #6e1b45;
+  color: #e872ad;
   margin-top: 20px;
 }
 
 ul li {
   text-align: center;
   margin: 5px 0;
-  color: #800040;
+  color: #c0408f;
   font-size: 1.1rem;
 }
-
 iframe {
   display: block;
   margin: 20px auto;
@@ -296,3 +448,122 @@ footer {
   100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
 }
 
+.floating-blossoms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.blossom {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  background-size: cover;
+  opacity: 0.7;
+  animation: fall 10s linear infinite;
+}
+
+.blossom:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.blossom:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+  width: 25px; height: 25px;
+}
+.blossom:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+.blossom:nth-child(4) {
+  left: 70%;
+  animation-delay: 1s;
+}
+.blossom:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+  width: 18px; height: 18px;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+.contact-info p {
+  margin: 10px 0;
+  font-weight: bold;
+  text-shadow: 0 0 4px #ffc4e1;
+  animation: pulse 2s infinite ease-in-out;
+  display: inline-block;
+}
+
+.contact-info p:nth-child(1) {
+  animation-delay: 0s;
+}
+.contact-info p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.contact-info p:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+section {
+  position: relative;
+  z-index: 1;
+}
+/* Toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff0f5;
+  border: 2px solid #a0005e;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 10001;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ffb6e6;
+}
+
+body.night-mode {
+  background: #1e1025;
+  color: #ffe6f0;
+}
+
+/* Heart container adapts */
+body.night-mode .heart {
+  filter: brightness(1.2);
+}
